@@ -154,12 +154,7 @@ def number():  # guess the number game
         guess_count += 1
         if guess == num and guess_count <= guess_limit:
             print("Nice You won! \nHint 2:_ _ 06 _ 3")
-            play = input("Do you want to go back to the main menu?")
-            if play == "yes":
-                agains()
-            if play != "yes":
-                print("Ok bye bye")
-                quit()
+            
         elif guess != num and guess_count != 0 and guess > 0 and guess < 100:
             print("Nice try but you are wrong, you have", guess_limit-guess_count, "guesses left")
             if num > guess:  # if the random number is greater than the guessed the number this will print that your guess was too low
